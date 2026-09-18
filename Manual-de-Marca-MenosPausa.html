@@ -79,14 +79,11 @@
 
   /* ---------- hero ---------- */
   .hero{
-    background:linear-gradient(135deg, #7C4FAE 0%, #9B4FA0 30%, #E0577B 60%, #FEA234 100%);
+    background:
+      linear-gradient(135deg, rgba(85,45,125,.72) 0%, rgba(155,79,160,.55) 30%, rgba(224,87,123,.45) 60%, rgba(180,90,40,.55) 100%),
+      url('assets/hero-background.jpg') center center / cover no-repeat;
     color:#fff; min-height:88vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
     text-align:center; padding:80px 32px; overflow:hidden;
-  }
-  .hero::before{
-    content:''; position:absolute; inset:0;
-    background-image:repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 2px, transparent 2px 46px);
-    pointer-events:none;
   }
   .hero img{ width:min(220px, 55vw); height:auto; margin-bottom:30px; filter:drop-shadow(0 10px 30px rgba(0,0,0,.25)); transition:transform .5s ease; position:relative; }
   .hero img:hover{ transform:scale(1.04) rotate(-1deg); }
